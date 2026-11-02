@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creatova AI — Create Without Limits</title>
+<style>
+:root{--bg:#090d18;--panel:#11182a;--panel2:#151e33;--line:#26324b;--text:#f4f6ff;--muted:#a5b0c8;--accent:#9b8cff;--accent2:#54d6c7;--pink:#f18acb}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#20204a 0,transparent 34%),radial-gradient(ellipse at 95% 15%,#123c46 0,transparent 28%),var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width:1220px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0 26px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:21px;letter-spacing:-.6px}.logo{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#08101d;font-weight:900;font-size:20px;box-shadow:0 8px 28px #8d82ff55}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;font-weight:600;margin-top:-4px}.top-actions{display:flex;gap:10px;align-items:center}.pill{border:1px solid var(--line);background:#121a2b;color:var(--text);padding:9px 14px;border-radius:999px}.primary{border:0;background:linear-gradient(110deg,var(--accent),#6f9cff);color:#090d18;font-weight:800;padding:11px 17px;border-radius:12px}.hero{padding:42px 0 28px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}.eyebrow{color:var(--accent2);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.02;letter-spacing:-2.8px;margin:13px 0 16px;max-width:720px}.grad{background:linear-gradient(100deg,#b9aaff,#70e5d5 70%);color:transparent;background-clip:text}.hero p{color:var(--muted);font-size:17px;max-width:620px}.hero-card{background:linear-gradient(145deg,#1b2340,#111a2b);border:1px solid #3b4567;border-radius:24px;padding:22px;box-shadow:0 24px 80px #0005}.mini-head{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.orb{height:160px;border-radius:18px;margin:17px 0;background:radial-gradient(circle at 50% 45%,#8c7cff 0 4%,transparent 5%),radial-gradient(circle at 50% 45%,#8c7cff55 0 18%,transparent 19%),conic-gradient(from 30deg,#5adac8,#7b78ff,#e28ccf,#5adac8);position:relative;overflow:hidden}.orb:after{content:"";position:absolute;inset:20px;border:1px solid #ffffff66;border-radius:50%;transform:scaleX(1.5) rotate(-25deg)}.mock-lines{display:grid;gap:9px}.mock-lines i{height:8px;border-radius:9px;background:#ffffff16}.mock-lines i:nth-child(1){width:82%}.mock-lines i:nth-child(2){width:60%}.mock-lines i:nth-child(3){width:72%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 34px}.stat{border:1px solid var(--line);background:#111827b8;border-radius:15px;padding:15px}.stat b{display:block;font-size:19px}.stat span{color:var(--muted);font-size:12px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:34px 0 16px}.section-title h2{font-size:24px;margin:0;letter-spacing:-.7px}.section-title p{margin:4px 0 0;color:var(--muted)}.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.tool{background:linear-gradient(145deg,#141d31,#101726);border:1px solid var(--line);border-radius:17px;padding:17px;text-align:left;color:var(--text);min-height:140px;transition:.2s}.tool:hover,.tool.active{border-color:var(--accent);transform:translateY(-2px);background:#1b2340}.icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#8f82ff22;font-size:19px;margin-bottom:13px}.tool b{display:block;font-size:15px}.tool span{display:block;color:var(--muted);font-size:12px;margin-top:4px}.workspace{display:grid;grid-template-columns:1fr .85fr;gap:15px;margin:16px 0 40px}.box{background:#111827d9;border:1px solid var(--line);border-radius:20px;padding:20px}.box h3{margin:0 0 5px;font-size:18px}.sub{color:var(--muted);font-size:13px;margin:0 0 18px}label{display:block;font-size:12px;color:#c5cde0;margin:13px 0 6px}input,select,textarea{width:100%;background:#0b1220;border:1px solid #303d59;border-radius:11px;color:var(--text);padding:12px;outline:none}textarea{min-height:112px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--accent)}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.secondary{border:1px solid var(--line);background:#1a2438;color:var(--text);padding:10px 14px;border-radius:11px}.output{min-height:220px;background:#0b1220;border:1px dashed #465273;border-radius:13px;padding:15px;color:#dce3f5;white-space:pre-wrap}.hint{color:var(--muted);font-size:12px;margin-top:10px}.badge{font-size:11px;border:1px solid #5b548e;color:#c6bcff;border-radius:999px;padding:4px 8px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:40px}.feature{padding:16px;border:1px solid var(--line);border-radius:15px;background:#11182799}.feature b{display:block;margin-bottom:5px}.feature span{color:var(--muted);font-size:13px}.footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.modal{position:fixed;inset:0;background:#02050bdc;display:none;place-items:center;padding:18px;z-index:5}.modal.show{display:grid}.modal-card{width:min(430px,100%);background:#131c30;border:1px solid #394665;border-radius:20px;padding:23px}.modal-card h2{margin:0 0 5px}.close{float:right;background:none;border:0;color:var(--muted);font-size:23px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#e7fff9;color:#071b1b;padding:10px 16px;border-radius:10px;display:none;font-weight:700;z-index:8}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.hero-card{max-width:500px}.tools{grid-template-columns:repeat(2,1fr)}.workspace{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.shell{padding:15px}.top{align-items:flex-start}.top-actions .pill{display:none}.hero{padding-top:25px}.hero h1{letter-spacing:-1.6px}.stats{grid-template-columns:1fr}.tools{gap:9px}.tool{padding:13px;min-height:130px}.row{grid-template-columns:1fr}.features{grid-template-columns:1fr}.section-title{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="top">
+ <div class="brand"><div class="logo">C</div><div>creatova<span class="grad">.ai</span><small>CREATE WITHOUT LIMITS</small></div></div>
+ <div class="top-actions"><span class="pill">✦ AI workspace</span><button class="pill" id="loginBtn">Log in</button><button class="primary" id="signupBtn">Get started</button></div>
+</header>
+<section class="hero">
+ <div><div class="eyebrow">✦ Your all-in-one creative studio</div><h1>Turn your ideas into <span class="grad">content that connects.</span></h1><p>Create scripts, captions, campaign copy and creative concepts in minutes. One simple workspace for creators, businesses and curious minds around the world.</p><div class="actions"><button class="primary" onclick="document.getElementById('studio').scrollIntoView({behavior:'smooth'})">Try the free demo →</button><button class="secondary" onclick="document.getElementById('toolsSection').scrollIntoView({behavior:'smooth'})">Explore AI tools</button></div></div>
+ <div class="hero-card"><div class="mini-head"><span>CREATIVE PREVIEW</span><span class="badge">DEMO WORKSPACE</span></div><div class="orb"></div><div class="mock-lines"><i></i><i></i><i></i></div><p style="color:#c8d2e8;font-size:13px;margin:15px 0 0">One idea. A whole universe of content.</p></div>
+</section>
+<div class="stats"><div class="stat"><b>20+ languages</b><span>Plan for global creators</span></div><div class="stat"><b>10 creative tools</b><span>Writing and content workflows</span></div><div class="stat"><b>One workspace</b><span>Mobile and desktop friendly</span></div></div>
+<section id="toolsSection">
+ <div class="section-title"><div><h2>Explore your creative toolkit</h2><p>Choose a tool to start shaping your next idea.</p></div><span class="badge">10 TOOLS</span></div>
+ <div class="tools" id="toolGrid">
+  <button class="tool active" data-tool="script"><div class="icon">🎬</div><b>AI Script Writer</b><span>Reels, Shorts and YouTube scripts</span></button>
+  <button class="tool" data-tool="caption"><div class="icon">✍️</div><b>Caption & Hashtags</b><span>Social captions and hashtag ideas</span></button>
+  <button class="tool" data-tool="ideas"><div class="icon">💡</div><b>Content Ideas</b><span>Fresh topics and hooks</span></button>
+  <button class="tool" data-tool="bio"><div class="icon">👤</div><b>Bio Generator</b><span>Profiles that introduce you</span></button>
+  <button class="tool" data-tool="ad"><div class="icon">📣</div><b>Ad Copy Studio</b><span>Promotional copy for your offer</span></button>
+  <button class="tool" data-tool="planner"><div class="icon">🗓️</div><b>Content Planner</b><span>A simple weekly posting plan</span></button>
+  <button class="tool" data-tool="translate"><div class="icon">🌍</div><b>AI Translator</b><span>Adapt content for other languages</span></button>
+  <button class="tool" data-tool="thumbnail"><div class="icon">🖼️</div><b>Thumbnail Concepts</b><span>Video thumbnail text and concepts</span></button>
+  <button class="tool" data-tool="post"><div class="icon">📱</div><b>Social Post</b><span>Post copy for your platform</span></button>
+  <button class="tool" data-tool="voice"><div class="icon">🎙️</div><b>Voiceover Script</b><span>Natural narration-ready text</span></button>
+ </div>
+</section>
+<section id="studio">
+ <div class="section-title"><div><h2>Creator studio</h2><p>Try the interactive sample generator below.</p></div><span class="badge">LOCAL DEMO</span></div>
+ <div class="workspace">
+  <div class="box"><h3 id="formTitle">AI Script Writer</h3><p class="sub" id="formSub">Tell us what your video is about.</p>
+   <label for="topic">Your topic or brief</label><textarea id="topic" placeholder="Example: 5 easy habits to stay productive as a student"></textarea>
+   <div class="row"><div><label for="platform">Platform</label><select id="platform"><option>Instagram Reels</option><option>YouTube Shorts</option><option>YouTube</option><option>Facebook</option><option>LinkedIn</option><option>Any platform</option></select></div><div><label for="tone">Tone</label><select id="tone"><option>Engaging</option><option>Professional</option><option>Funny</option><option>Friendly</option><option>Inspirational</option></select></div></div>
+   <div class="row"><div><label for="language">Output language</label><select id="language"><option>English</option><option>Hindi</option><option>Spanish</option><option>French</option><option>Arabic</option><option>German</option><option>Portuguese</option></select></div><div><label for="length">Length</label><select id="length"><option>Short</option><option>Medium</option><option>Detailed</option></select></div></div>
+   <div class="actions"><button class="primary" id="generate">Generate with AI ✦</button><button class="secondary" id="clear">Clear</button></div>
+   <p class="hint">Demo note: this creates sample text in your browser. A live AI model will be connected in a later development step.</p>
+  </div>
+  <div class="box"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center"><h3>Your result</h3><span class="badge">PREVIEW</span></div><p class="sub">Your generated content will appear here.</p><div class="output" id="output" aria-live="polite">Your creative draft will appear here. Select a tool, enter a topic and tap “Generate with AI”.</div><div class="actions"><button class="secondary" id="copy">Copy text</button><button class="secondary" id="download">Download .txt</button></div></div>
+ </div>
+</section>
+<section><div class="section-title"><div><h2>Made for every kind of creator</h2><p>Start with a small idea and build it into something bigger.</p></div></div><div class="features">
+ <div class="feature"><b>🌐 Global-ready</b><span>Designed with a multilingual experience in mind.</span></div>
+ <div class="feature"><b>⚡ Simple workflow</b><span>Move from brief to a usable first draft quickly.</span></div>
+ <div class="feature"><b>📱 Responsive design</b><span>Use the same workspace on phone, tablet or desktop.</span></div>
+ </div></section>
+<footer class="footer"><span>© 2026 Creatova AI · Early access build</span><span>Built for ideas everywhere ✦</span></footer>
+</div>
+<div class="modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close">×</button><h2 id="authTitle">Welcome to Creatova</h2><p class="sub">Account access is a preview in this prototype.</p><button class="secondary" style="width:100%" id="google">Continue with Google</button><label for="email">Email address</label><input id="email" type="email" placeholder="you@example.com"><label for="password">Password</label><input id="password" type="password" placeholder="At least 8 characters"><button class="primary" style="width:100%;margin-top:15px" id="emailAuth">Continue with email</button><p class="hint">Google OAuth and secure account creation require a backend and identity-provider setup. No credentials are stored by this demo.</p></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const configs={
+ script:["AI Script Writer","Tell us what your video is about."],
+ caption:["Caption & Hashtags","Describe your post and audience."],
+ ideas:["Content Ideas","Enter your niche or subject."],
+ bio:["Bio Generator","Tell us who you are and what you create."],
+ ad:["Ad Copy Studio","Describe your product, service or offer."],
+ planner:["Content Planner","Enter your niche and posting goal."],
+ translate:["AI Translator","Paste text and choose the target language."],
+ thumbnail:["Thumbnail Concepts","Describe your video topic."],
+ post:["Social Post","Tell us what you want to share."],
+ voice:["Voiceover Script","Describe the message for your narration."]
+};
+let selected="script";
+const $=id=>document.getElementById(id);
+function toast(msg){$("toast").textContent=msg;$("toast").style.display="block";setTimeout(()=>$("toast").style.display="none",2300)}
+document.querySelectorAll(".tool").forEach(btn=>btn.addEventListener("click",()=>{selected=btn.dataset.tool;document.querySelectorAll(".tool").forEach(x=>x.classList.toggle("active",x===btn));$("formTitle").textContent=configs[selected][0];$("formSub").textContent=configs[selected][1];$("output").textContent="Your "+configs[selected][0].toLowerCase()+" preview will appear here.";$("studio").scrollIntoView({behavior:"smooth",block:"start"})}));
+$("generate").addEventListener("click", async ()=>{
+ const topic=$("topic").value.trim();if(!topic){toast("Please enter a topic first.");$("topic").focus();return}
+ const payload={tool:selected,topic,platform:$("platform").value,tone:$("tone").value,language:$("language").value,length:$("length").value};
+ const button=$("generate");button.disabled=true;button.textContent="Creating with AI…";$("output").textContent="Generating your content. Please wait…";
+ try {
+  const response=await fetch('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  const data=await response.json();if(!response.ok) throw new Error(data.error||'AI generation failed.');
+  $("output").textContent=data.output;toast("AI content created!");
+ } catch(error) { $("output").textContent=error.message;toast("AI connection needs setup."); }
+ finally {button.disabled=false;button.textContent="Generate with AI ✦";}
+});
+$("clear").addEventListener("click",()=>{$("topic").value="";$("output").textContent="Your creative draft will appear here.";});
+$("copy").addEventListener("click",()=>{const t=$("output").textContent;if(!t||t.startsWith("Your creative")){toast("Nothing to copy yet.");return}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(()=>toast("Copied!")).catch(()=>toast("Copy is unavailable in this preview."))}else{toast("Open on a secure site to use copy.")}});
+$("download").addEventListener("click",()=>{const t=$("output").textContent;if(!t||t.startsWith("Your creative")){toast("Generate a draft first.");return}const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:"text/plain"}));a.download="creatova-draft.txt";a.click();URL.revokeObjectURL(a.href)});
+function openModal(mode){$("authTitle").textContent=mode==="signup"?"Create your Creatova account":"Welcome back";$("authModal").classList.add("show")}
+$("loginBtn").addEventListener("click",()=>openModal("login"));$("signupBtn").addEventListener("click",()=>openModal("signup"));$("closeModal").addEventListener("click",()=>$("authModal").classList.remove("show"));$("authModal").addEventListener("click",e=>{if(e.target===$("authModal"))$("authModal").classList.remove("show")});
+$("google").addEventListener("click",()=>toast("Google sign-in will be connected in the production build."));$("emailAuth").addEventListener("click",()=>{const e=$("email").value.trim(),p=$("password").value;if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)||p.length<8){toast("Enter a valid email and 8+ character password.");return}toast("Authentication backend is not connected yet.");});
+</script>
+</body>
+</html>
